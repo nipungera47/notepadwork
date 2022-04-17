@@ -1,11 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import LandingPage from './Screens/LandingPage/LandingPage';
 function App() {
   return (
-    <div className="App">
-     Hello World 
-    </div>
+    <>
+    <Header></Header>
+    <main style={{minHeight:"93vh"}}>
+      <LandingPage/>
+    </main>
+    <Footer></Footer>
+
+    </>
   );
 }
 
