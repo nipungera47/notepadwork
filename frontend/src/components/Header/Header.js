@@ -1,6 +1,6 @@
 import React from 'react';
 import{Navbar,Form,FormControl,Nav,NavDropdown,Container,Button } from "react-bootstrap";
-
+import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <Navbar bg="primary" expand="lg" variant = "dark">
@@ -24,7 +24,11 @@ const Header = () => {
         style={{ maxHeight: '100px' }}
         navbarScroll
       >
-        <Nav.Link href="#">My Notes</Nav.Link>
+        <Nav.Link>
+        <Link to="/mynotes" style={{ color: '#FFF' }}>
+        My Notes
+        </Link>
+        </Nav.Link>
         <NavDropdown title="Nipun Gera" id="navbarScrollingDropdown">
           <NavDropdown.Item href="#action3">My Profile</NavDropdown.Item>
           <NavDropdown.Item href="#action4">Log Out</NavDropdown.Item>

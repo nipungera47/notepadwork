@@ -23,9 +23,6 @@ const LandingPage = () => {
                         <Button size="lg" className='landingButton' variant='outline-primary'> Register</Button>
                     </a>
                 </div>
-
-
-
            </div>
        </Row>
    </Container>
